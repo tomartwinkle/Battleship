@@ -1,0 +1,61 @@
+body{
+    background: url('https://images7.alphacoders.com/101/thumb-1920-1017706.jpg');
+    margin: 0;
+    padding: 0;
+    
+}
+h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 40px;
+    text-align: center;
+}
+.grids{
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+    gap: 200px;
+}
+.PlayerGrid, .ComputerGrid{
+    width: 400px;
+    height:400px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(10,40px);
+    grid-template-rows: repeat(10,40px);
+    border: 1px solid black;
+}
+.cell{
+    border: 1px solid black;
+}
+.row-align{
+    display: flex;
+    gap: 40px;
+}
+.shipContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.startGameBtn{
+    padding: 12px 15px;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor: crosshair;
+    margin-left: 47vw;
+}
+.startGameBtn:hover{
+    background-color: rgb(105, 2, 2);
+    border: rgb(45, 10, 1);
+    box-shadow: 0px 2px 0px 6px rgba(42, 0, 0, 0.1);
+    color: white;
+}
+.computerShipContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
