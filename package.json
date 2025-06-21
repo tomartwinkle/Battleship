@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://tomartwinkle.github.io/Battleship",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,9 +20,9 @@
   "bugs": {
     "url": "https://github.com/tomartwinkle/Battleship/issues"
   },
-  "homepage": "https://github.com/tomartwinkle/Battleship#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "jest": "^30.0.2",
